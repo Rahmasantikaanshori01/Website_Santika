@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galeri Foto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Galeri Foto</h1>
+  <div class="container">
+    <div class="filters" aria-label="Filter Foto Berdasarkan Kategori">
+      <button class="filter-btn active" data-filter="all">Semua</button>
+      <button class="filter-btn" data-filter="Me">Me</button>
+      <button class="filter-btn" data-filter="Pramuka">Pramuka</button>
+      <button class="filter-btn" data-filter="Alam">Alam</button>
+      <button class="filter-btn" data-filter="Family">Family</button>
+    </div>
+    <div class="grid" id="photoGrid">
+      <!-- Foto grid items -->
+      <div class="grid-item" data-category="Me" tabindex="0">
+        <img src="me1.jpeg" />
+        <div class="caption">Me</div>
+      </div>
+      <div class="grid-item" data-category="Pramuka" tabindex="0">
+        <img src="pramuka1.jpg" />
+        <div class="caption">Pramuka</div>
+      </div>
+      <div class="grid-item" data-category="Alam" tabindex="0">
+        <img src="alam1.jpg" />
+        <div class="caption">Alam</div>
+      </div>
+      <div class="grid-item" data-category="Family" tabindex="0">
+        <img src="family1.jpeg" />
+        <div class="caption">Family</div>
+      </div>
+      <div class="grid-item" data-category="Me" tabindex="0">
+        <img src="me2.jpeg" />
+        <div class="caption">Me</div>
+      </div>
+      <div class="grid-item" data-category="Pramuka" tabindex="0">
+        <img src="pramuka2.jpg" />
+        <div class="caption">Pramuka</div>
+      </div>
+      <div class="grid-item" data-category="Alam" tabindex="0">
+        <img src="alam2.jpg" />
+        <div class="caption">Alam</div>
+      </div>
+      <div class="grid-item" data-category="Family" tabindex="0">
+        <img src="family2.jpeg"  />
+        <div class="caption">Family</div>
+      </div>
+      <div class="grid-item" data-category="Me" tabindex="0">
+        <img src="me3.jpeg" />
+        <div class="caption">Me</div>
+      </div>
+      <div class="grid-item" data-category="Pramuka" tabindex="0">
+        <img src="pramuka4.jpg" />
+        <div class="caption">Pramuka</div>
+      </div>
+      <div class="grid-item" data-category="Me" tabindex="0">
+        <img src="me4.jpeg" />
+        <div class="caption">Me</div>
+      </div>
+      <div class="grid-item" data-category="Alam" tabindex="0">
+        <img src="alam3.jpg" />
+        <div class="caption">Alam</div>
+      </div>
+      <div class="grid-item" data-category="Family" tabindex="0">
+        <img src="family3.jpeg"  />
+        <div class="caption">Family</div>
+      </div>
+      <div class="grid-item" data-category="Me" tabindex="0">
+        <img src="me5.jpeg" />
+        <div class="caption">Me</div>
+      </div>
+      <div class="grid-item" data-category="Me" tabindex="0">
+        <img src="me6.jpeg" />
+        <div class="caption">Me</div>
+      </div>
+      <div class="grid-item" data-category="Family" tabindex="0">
+        <img src="family4.jpeg"  />
+        <div class="caption">Family</div>
+      </div>
+      <div class="grid-item" data-category="Alam" tabindex="0">
+        <img src="alam4.jpg" />
+        <div class="caption">Alam</div>
+      </div>
+      <div class="grid-item" data-category="Family" tabindex="0">
+        <img src="family8.jpeg"  />
+        <div class="caption">Family</div>
+      </div>
+      <div class="grid-item" data-category="Me" tabindex="0">
+        <img src="me7.jpeg" />
+        <div class="caption">Me</div>
+      </div>
+      <div class="grid-item" data-category="Family" tabindex="0">
+        <img src="family7.jpeg"  />
+        <div class="caption">Sushi</div>
+      </div>
+      <div class="grid-item" data-category="Pramuka" tabindex="0">
+        <img src="pramuka5.jpg" />
+        <div class="caption">Pramuka</div>
+      </div>
+      <div class="grid-item" data-category="Family" tabindex="0">
+        <img src="family5.jpeg"  />
+        <div class="caption">Family</div>
+      </div>
+      <div class="grid-item" data-category="Pramuka" tabindex="0">
+        <img src="pramuka6.jpg" />
+        <div class="caption">Pramuka</div>
+      </div>
+      <div class="grid-item" data-category="Family" tabindex="0">
+        <img src="family6.jpeg"  />
+        <div class="caption">Family</div>
+      </div>
+      <div class="grid-item" data-category="Alam" tabindex="0">
+        <img src="alam7.jpg" />
+        <div class="caption">Alam</div>
+      </div>
+      <div class="grid-item" data-category="Me" tabindex="0">
+        <img src="me8.jpeg" />
+        <div class="caption">Me</div>
+      </div>
+      <div class="grid-item" data-category="Alam" tabindex="0">
+        <img src="alam6.jpg" />
+        <div class="caption">Alam</div>
+      </div>
+      <div class="grid-item" data-category="Pramuka" tabindex="0">
+        <img src="pramuka3.jpg" />
+        <div class="caption">Pramuka</div>
+      </div>
+      <div class="grid-item" data-category="Me" tabindex="0">
+        <img src="me9.png" />
+        <div class="caption">Me</div>
+      </div>
+      <div class="grid-item" data-category="Alam" tabindex="0">
+        <img src="alam8.jpg" />
+        <div class="caption">Alam</div>
+      </div>
+      <div class="grid-item" data-category="Family" tabindex="0">
+        <img src="family9.jpeg"  />
+        <div class="caption">Family</div>
+      </div>
+      <div class="grid-item" data-category="Alam" tabindex="0">
+        <img src="alam5.jpg" />
+        <div class="caption">Alam</div>
+      </div>
+      <div class="grid-item" data-category="Me" tabindex="0">
+        <img src="me10.png" />
+        <div class="caption">Me</div>
+      </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="imgModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Tutup Modal">&times;</button>
+      <img src="" alt="" id="modalImg" />
+      <div class="modal-caption" id="modalTitle"></div>
+    </div>
+  </div>
+
+  <script>
+    // Elements
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const gridItems = document.querySelectorAll('.grid-item');
+    const modal = document.getElementById('imgModal');
+    const modalImg = document.getElementById('modalImg');
+    const modalCaption = document.getElementById('modalTitle');
+    const modalCloseBtn = modal.querySelector('.modal-close');
+
+    // Filter functionality
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+        gridItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Modal popup functionality
+    gridItems.forEach(item => {
+      item.addEventListener('click', () => {
+        openModal(item);
+      });
+      item.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openModal(item);
+        }
+      });
+    });
+
+    function openModal(item) {
+      const img = item.querySelector('img');
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+      modalCaption.textContent = item.querySelector('.caption').textContent;
+      modal.classList.add('active');
+      modal.setAttribute('aria-hidden', 'false');
+      modalCloseBtn.focus();
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.remove('active');
+      modal.setAttribute('aria-hidden', 'true');
+      modalImg.src = '';
+      modalImg.alt = '';
+      modalCaption.textContent = '';
+      document.body.style.overflow = '';
+    }
+
+    modalCloseBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    // Close modal with ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('active')) {
+        closeModal();
+      }
+    });
+  </script>
+</body>
+</html>
+

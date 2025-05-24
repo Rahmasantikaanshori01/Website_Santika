@@ -1,0 +1,200 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+  :root {
+    --color-primary: #d97dff;
+    --color-secondary: #ffb8f1;
+    --color-accent: #7e4eff;
+    --color-bg: #fff0ff;
+    --color-text-dark: #2c1450;
+    --color-text-light: #6e529f;
+    --color-white: #ffffff;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text-dark);
+    line-height: 1.6;
+  }
+
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: var(--color-primary);
+  }
+
+  header {
+    background: var(--color-white);
+    box-shadow: 0 2px 8px rgb(88 38 142 / 0.1);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  nav a {
+    margin: 0 1.2rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  nav a.active,
+  nav a:hover {
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+  }
+
+  /* hero section */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .hero img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgb(217 125 255 / 0.45);
+    border: 6px solid var(--color-primary);
+  }
+  .hero h1 {
+    font-size: 2.6rem;
+    color: var(--color-primary);
+    margin-bottom: 0.2rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    color: var(--color-text-light);
+    max-width: 500px;
+  }
+
+  /* sections styling */
+  section {
+    margin-bottom: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+    border-bottom: 3px solid var(--color-primary);
+    display: inline-block;
+    padding-bottom: 0.2rem;
+  }
+
+  /* about section */
+  #about p {
+    max-width: 700px;
+    font-weight: 400;
+    color: var(--color-text-dark);
+  }
+
+  /* skills section */
+  #skills ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+    gap: 1rem;
+  }
+  #skills li {
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.7rem 1rem;
+    border-radius: 70px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(255, 125, 190, 0.5);
+    transition: background-color 0.3s ease;
+  }
+  #skills li:hover {
+    background: var(--color-accent);
+    color: var(--color-primary);
+  }
+
+  /* contact section */
+  #contact p {
+    font-size: 1.1rem;
+    color: var(--color-text-dark);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  #contact .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+  #contact a.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(217, 125, 255, 0.4);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.4s ease;
+    text-decoration: none;
+    will-change: transform;
+  }
+  #contact a.social-link:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    /* transform: scale(1.15); */
+    transform: scalea(1.2) translateY(-10px);
+    box-shadow: 0 0 25px var(--color-white);
+  }
+  #contact a svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+  }
+
+  /* footer */
+  footer {
+    text-align: center;
+    padding: 1.2rem 0;
+    background: var(--color-white);
+    color: var(--color-text-light);
+    font-size: 0.88rem;
+    box-shadow: 0 -2px 8px rgb(88 38 142 / 0.1);
+  }
+
+  /* Responsive Styles */
+  @media (min-width: 600px) {
+    .hero {
+      flex-direction: row;
+      text-align: left;
+      gap: 2.5rem;
+      align-items: center;
+    }
+    .hero img {
+      width: 180px;
+      height: 180px;
+    }
+    .hero-text {
+      max-width: 450px;
+    }
+  }
